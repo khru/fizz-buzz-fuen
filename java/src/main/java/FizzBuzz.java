@@ -1,5 +1,8 @@
 public class FizzBuzz {
   public static String convert(int givenNumber) {
-    return "1";
+    if (givenNumber == 1) {
+      return "1";
+    }
+    return "2";
   }
 }
