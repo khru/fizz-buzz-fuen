@@ -15,4 +15,8 @@ public class FizzBuzzTest {
     assertEquals("2",FizzBuzz.convert(2));
   }
 
+  @Test
+  public void convert_4_to_4() {
+    assertEquals("4",FizzBuzz.convert(4));
+  }
 }
