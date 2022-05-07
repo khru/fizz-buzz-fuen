@@ -27,20 +27,14 @@ public class FizzBuzzShould {
     assertEquals("fizz",FizzBuzz.convert(givenNumber));
   }
 
-  @Test
-  public void convert_five_to_buzz() {
-    assertEquals("buzz",FizzBuzz.convert(5));
+  @ParameterizedTest
+  @CsvSource({
+    "5",
+    "10",
+    "20"
+  })
+  public void convert_a_number_divisible_by_five_not_three_to_buzz(int givenNumber) {
+    assertEquals("buzz",FizzBuzz.convert(givenNumber));
   }
-
-  @Test
-  public void convert_ten_to_buzz() {
-    assertEquals("buzz",FizzBuzz.convert(10));
-  }
-
-  @Test
-  public void convert_twenty_to_buzz() {
-    assertEquals("buzz",FizzBuzz.convert(20));
-  }
-
 
 }

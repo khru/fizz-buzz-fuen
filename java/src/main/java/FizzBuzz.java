@@ -1,12 +1,25 @@
 public class FizzBuzz {
+  final static private String FIZZ = "fizz";
+  final static private String BUZZ = "buzz";
+
+
   public static String convert(int givenNumber) {
-    if (givenNumber == 5 || givenNumber == 10 || givenNumber == 20) {
-      return "buzz";
+    if (isNumberDivisibleByFive(givenNumber)) {
+      return BUZZ;
     }
 
-    if (givenNumber % 3 == 0) {
-      return "fizz";
+    if (isNumberDivisibleByThree(givenNumber)) {
+      return FIZZ;
     }
+
     return String.valueOf(givenNumber);
+  }
+
+  private static boolean isNumberDivisibleByThree(int givenNumber) {
+    return givenNumber % 3 == 0;
+  }
+
+  private static boolean isNumberDivisibleByFive(int givenNumber) {
+    return givenNumber % 5 == 0;
   }
 }
