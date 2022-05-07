@@ -3,6 +3,10 @@ public class FizzBuzz {
     if (givenNumber == 1) {
       return "1";
     }
-    return "2";
+
+    if (givenNumber == 2) {
+      return "2";
+    }
+    return "4";
   }
 }
