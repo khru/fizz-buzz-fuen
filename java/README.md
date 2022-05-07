@@ -1,0 +1,5 @@
+- [X] should_convert_a_number_not_divisible_by_three_nor_five_to_the_same_number_as_string
+- [X] convert_three_to_fizz
+- [ ] convert_six_to_fizz
+- [ ] convert_nine_to_fizz
+- [ ] should_convert_a_number_divisible_by_three_not_five_to_fizz
