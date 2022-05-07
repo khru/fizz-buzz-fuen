@@ -37,19 +37,14 @@ public class FizzBuzzShould {
     assertEquals("buzz",FizzBuzz.convert(givenNumber));
   }
 
-  @Test
-  public void convert_15_to_fizzbuzz() {
-    assertEquals("fizzbuzz",FizzBuzz.convert(15));
-  }
-
-  @Test
-  public void convert_30_to_fizzbuzz() {
-    assertEquals("fizzbuzz",FizzBuzz.convert(30));
-  }
-
-  @Test
-  public void convert_50_to_fizzbuzz() {
-    assertEquals("fizzbuzz",FizzBuzz.convert(50));
+  @ParameterizedTest
+  @CsvSource({
+    "15",
+    "30",
+    "45"
+  })
+  public void convert_a_number_not_divisible_by_fifteen_to_fizzbuzz(int givenNumber) {
+    assertEquals("fizzbuzz",FizzBuzz.convert(givenNumber));
   }
 
 }
