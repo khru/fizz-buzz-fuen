@@ -13,23 +13,23 @@ public class FizzBuzzShould {
     "2,2",
     "4,4"
   })
-  public void should_convert_a_number_not_divisible_by_three_nor_five_to_the_same_number_as_string(String expected, int givenNumber) {
+  public void convert_a_number_not_divisible_by_three_nor_five_to_the_same_number_as_string(String expected, int givenNumber) {
     assertEquals(expected,FizzBuzz.convert(givenNumber));
   }
 
-  @Test
-  public void convert_three_to_fizz() {
-    assertEquals("fizz",FizzBuzz.convert(3));
+  @ParameterizedTest
+  @CsvSource({
+    "3",
+    "6",
+    "9"
+  })
+  public void convert_a_number_divisible_by_three_not_five_to_fizz(int givenNumber) {
+    assertEquals("fizz",FizzBuzz.convert(givenNumber));
   }
 
-
   @Test
-  public void convert_six_to_fizz() {
-    assertEquals("fizz",FizzBuzz.convert(6));
+  public void convert_five_to_buzz() {
+    assertEquals("buzz",FizzBuzz.convert(5));
   }
 
-  @Test
-  public void convert_nine_to_fizz() {
-    assertEquals("fizz",FizzBuzz.convert(9));
-  }
 }
