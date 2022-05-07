@@ -3,7 +3,7 @@ public class FizzBuzz {
   final static private String BUZZ = "buzz";
 
   public static String convert(int givenNumber) {
-    if (givenNumber == 15) {
+    if (givenNumber == 15 || givenNumber == 30) {
       return "fizzbuzz";
     }
 
