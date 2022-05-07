@@ -2,7 +2,6 @@ public class FizzBuzz {
   final static private String FIZZ = "fizz";
   final static private String BUZZ = "buzz";
 
-
   public static String convert(int givenNumber) {
     if (givenNumber == 15) {
       return "fizzbuzz";
@@ -18,8 +17,6 @@ public class FizzBuzz {
 
     return String.valueOf(givenNumber);
   }
-
-
 
   private static boolean isNumberDivisibleByThree(int givenNumber) {
     return givenNumber % 3 == 0;
