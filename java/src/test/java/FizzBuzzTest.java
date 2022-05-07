@@ -7,7 +7,7 @@ public class FizzBuzzTest {
 
 	@Test
 	public void convert_1_to_1() {
-		assertEquals("1",new FizzBuzz().convert(1));
+		assertEquals("1",FizzBuzz.convert(1));
 	}
 
 }
