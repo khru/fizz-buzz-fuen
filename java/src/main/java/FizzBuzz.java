@@ -1,6 +1,6 @@
 public class FizzBuzz {
   public static String convert(int givenNumber) {
-    if (givenNumber == 5) {
+    if (givenNumber == 5 || givenNumber == 10) {
       return "buzz";
     }
 
