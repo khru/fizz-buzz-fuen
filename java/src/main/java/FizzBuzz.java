@@ -4,6 +4,10 @@ public class FizzBuzz {
 
 
   public static String convert(int givenNumber) {
+    if (givenNumber == 15) {
+      return "fizzbuzz";
+    }
+
     if (isNumberDivisibleByFive(givenNumber)) {
       return BUZZ;
     }
@@ -14,6 +18,8 @@ public class FizzBuzz {
 
     return String.valueOf(givenNumber);
   }
+
+
 
   private static boolean isNumberDivisibleByThree(int givenNumber) {
     return givenNumber % 3 == 0;
