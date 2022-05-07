@@ -32,4 +32,10 @@ public class FizzBuzzShould {
     assertEquals("buzz",FizzBuzz.convert(5));
   }
 
+  @Test
+  public void convert_ten_to_buzz() {
+    assertEquals("buzz",FizzBuzz.convert(10));
+  }
+
+
 }
